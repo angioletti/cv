@@ -9,7 +9,7 @@
   {\@opening}
   {}{}
 \makeatother
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage [T1] {fontenc}
 % \usepackage[utf8]{inputenc}
 
@@ -25,7 +25,8 @@
 \phone[fixed]{+55~(19)~3327~5453}
 \email{luiz.angioletti@gmail.com}
 \social[linkedin]{br.linkedin.com/in/luizangioletti}
-\extrainfo{skype: luizfelipeasoares}					% informação opcional, caso não a queria, elimine a linha
+\extrainfo{%
+		skype: luizfelipeasoares, solteiro, 28 anos.}					% informação opcional, caso não a queria, elimine a linha
 % \photo[64pt][0.4pt]{picture}					% `64pt' é a altura a que a imagem deve ser ajustada, `0.4pt' é a espessura do quadro que a contera (informe `0pt' para nenhum contorno) e `picture' é o nome do arquivo; informação opcional, caso não a queria, elimine a linha
 %\quote{Alguma cita\c{c}\~ao (opcional)} 		% informação opcional, caso não a queria, elimine a linha
 
@@ -47,104 +48,71 @@
 
 \makecvtitle
 
-\section{Forma\c{c}\~ao Acad\^emica}
-\cventry{2006 -- 2013}{Gradua\c{c}\~ao}{Universidade Federal do Par\'a}{Bel\'em}{\textit{Engenharia da Computa\c{c}\~ao}}{} % os argumentos de 3 a 6 podem permanecer em branco
-%\cventry{ano -- ano}{Grau}{Institui\c{c}\~ao}{Cidade}{\textit{Curso}}{Descri\c{c}\~ao}
+\section{Formação Acadêmica}
+\cventry{2006 -- 2013}{Graduação}{Universidade Federal do Pará}{Belém}{\textit{Engenharia da Computação}}{} 
+\cventry{2009 -- 2010}{Intercâmbio}{Universität Stuttgart}{Stuttgart}{\textit{Elektrotechnik und Informatik}}{}
 
 %\section{T\'eses de Mestrado}
 %\cvitem{t\'itulo}{\emph{T\'itulo}}
 %\cvitem{orientadores}{Orientadores}
 %\cvitem{descrição}{Uma breve descrição da tese.}
 
-\section{Experi\^encias}
+\section{Experiências}
 	\subsection{Profissionais}
-		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao geral, n\~ao mais que uma ou duas linhas.\newline{}%
-		Responsabilidades especificas:%
+		\cventry{2012 -- 2013}{Analista de Suporte}{Jambu Tecnologia e Engenharia Ltda.}{Belém}{}{Oportunidade de estágio em empresa \emph{startup} de tecnologia, o que permitiu ampla experiência nas áreas de ação da empresa, como:%
 		\begin{itemize}
-			\item responsabilidade 1;
-			\item responsabilidade 2, com sub-responsabilidades:
-			\begin{itemize}
-				\item sub-responsabilidade (a)
-				\item sub-responsabilidade (b), com sub-responsabilidades (evite fazer isso!);
-				\begin{itemize}
-					\item sub-sub-responsabilidade i;
-					\item sub-sub-responsabilidade ii;
-					\item sub-sub-responsabilidade iii;
-				\end{itemize}
-				\item sub-responsabilidade (c);
-			\end{itemize}
-			\item responsabilidade 3.
+			\item programação para administração de sistemas em Bash e Python;
+			\item atendimento a clientes, presencial e remotamente;
+			\item projeto, implementação e manutenção de: redes de computadores de médio porte, servidores de autenticação e controle de tráfego, servidores com serviços em WEB: autenticação, controle de versão, instrutor em curso preparatório para certificação internacional em GNU/Linux (certificação LPI);
+			\item co-autor de material didático para o curso preparatório supra-citado.
 		\end{itemize}}
-		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao na linha 1.\newline{}Descri\c{c}\~ao na linha 2.}
+		\cventry{2011 -- 2012}{Gerente de TI}{Laborat\'orio de Processamento de Sinais -- LaPS -- UFPA.}{Bel\'em}{}{Responsável pelo projeto e implementação de serviços, entre os quais:
+		\begin{itemize}
+			\item capacitação de bolsistas para as atividades de suporte;
+			\item projeto, implementação e manutenção de servidores de: autenticação e arquivos, controle de versão, serviços WEB, impressao;
+		\end{itemize}}
 
-	\subsection{Miscel\^anea}
-		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao}
+	\subsection{Voluntariado}
+		\cventry{2008 -- 2013}{Co-Fundador e Tesoureiro}{Grupo Colorindo Sonhos}{Belém}{}{O grupo, tamanho médio de 15 pessoas, visa atender necessidades materiais e humanas das instituições de apoio social regularmente instaladas na região metropolitana de Belém, promovendo ações de conscientização, fóruns, atividades complementares aos atendidos e campanhas de arrecadação. Como tesoureiro fui responsável pelas finanças do grupo, bem como por repasse e aplicação de doações.}
+		\cventry{2006 -- 2012}{Coordenador de Equipe de TI}{União Espírita Paraense -- UEP}{Belém}{}{A UEP promove eventos anuais de relevância estadual, que atraem por volta de 800 participantes a cada evento. Para suprir suas necessidades de TI, criou equipe de voluntários, a qual tive o prazer de coordenar. Entre minhas funções estavam: especificação e acompanhamento de desenvolvimento de sistema de inscrição on-line, processamento de inscrições e atendimento ao público.}
 		
 \section{Idiomas}
-\cvitemwithcomment{Idioma 1}{nivel}{Coment\'ario}
-\cvitemwithcomment{Idioma 2}{nivel}{Coment\'ario}
-\cvitemwithcomment{Idioma 3}{nivel}{Coment\'ario}
+\cvitemwithcomment{Inglês}{fluente para escrita, leitura e conversação}{Certificado CCBEU -- Belém}
+\cvitemwithcomment{Alemão}{nível B1}{Certificado pela Universität Stuttgart}
+\cvitemwithcomment{Francês}{básico para escrita, leitura e conversação}{conclusão pendente}
 
-\section{Conhecimentos de Informática}
-\cvdoubleitem{categoria 1}{XXXX, YYY, ZZZ}{categoria 4}{XXXX, YYY, ZZZ}
-\cvdoubleitem{categoria 2}{XXXX, YYY, ZZZ}{categoria 5}{XXXX, YYY, ZZZ}
-\cvdoubleitem{categoria 3}{XXXX, YYY, ZZZ}{categoria 6}{XXXX, YYY, ZZZ}
+\section{Competências}
+\cvitemwithcomment{Pacote MS-Office}{conhecimentos avançados}{Word e Excel}
+\cvitemwithcomment{Pacote MS-Office}{conhecimentos básicos}{PowerPoint e Access}
+\cvitemwithcomment{Administração de Sistemas}{GNU/Linux}{certificação LPI em andamento}
+\cvitemwithcomment{Linguagens de Programação}{experiência de trabalho}{C, Java, Bash e Python}
 
 \section{Interesses}
-\cvitem{hobby 1}{Descrição}
-\cvitem{hobby 2}{Descrição}
-\cvitem{hobby 3}{Descrição}
+\cvitem{Literatura Clássica}{Leitura em andamento: Os Miseráveis (Victor Hugo); última obra lida: Crime e Castigo (Fiódor Dostoiévski)}
+\cvitem{Métodos de Organização Pessoal}{Utilizador já há dois anos do método GTD (\emph{Getting Things Done}}
+\cvitem{Pesquisas Sociais e Ambientais}{\emph{freelancer} em transcrição de áudios para pesquisadores da área social e/ou ambiental, especificamente para questões da Amazônia}
 
-\section{Extra 1}
-\cvlistitem{Tema 1}
-\cvlistitem{Tema 2}
-\cvlistitem{Tema 3}
-
-\renewcommand{\listitemsymbol}{-~}			% para modificar os símbolos nas listas
-
-\section{Extra 2}
-\cvlistdoubleitem{Tema 1}{Tema 4}
-\cvlistdoubleitem{Tema 2}{Tema 5}
-\cvlistdoubleitem{Tema 3}{}
-
-% publicações tomadas de um arquivo BibTeX sem usar multibib\renewcommand*{bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-
-\nocite{*}
-\bibliography{plain}
-\bibliography{publications}					% `publications' deve ser o nome do arquivo BibTeX
-
-% Com publicações tomadas de um arquivo BibTeX usando o pacote multilib
-%\section{Publica\c{c}\~oes}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}              		% 'publications' deve ser o nome do arquivo BibTeX
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}              		% 'publications' deve ser o nome do arquivo BibTeX
-
-%\clearpage\end{CJK*}					% se você está redigindo seu currículo em chinês usando o CJK, \clearpage é requerido pelo fancyhdr para que funcione corretamente com o CJK, note que isso eliminará a numeração de página, ao deixar \lastpage como não definido
-
-%----------------------------------------------------------------------------------------
-%	Carta de Apresentação
-%----------------------------------------------------------------------------------------
-
-% para remover a carta de apresentação, remova todo esse bloco
-
-\clearpage
-
-\recipient{Departamento de RH}{Empresa\\123 Rua Independ\^encia\\12345-000, Cidade, Estado} % Destinatário da carta
-\date{\today} % Data da carta
-\opening{Prezado Sr. ou Sra.,} % Vocativo
-\closing{Grato pela aten\c{c}\~ao,} % Encerramento
-\enclosure[Em anexo]{curriculum vit\ae{}} % Lista de documentos anexos
-
-\makelettertitle % Imprimir esse título de carta
-
-\lipsum[1-3]% Texto qualquer
-
-\makeletterclosing % Imprimir o encerramento da carta
-
-%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%%	Carta de Apresentação
+%%----------------------------------------------------------------------------------------
+%
+%% para remover a carta de apresentação, remova todo esse bloco
+%
+%\clearpage
+%
+%\recipient{Departamento de RH}{Empresa\\123 Rua Independ\^encia\\12345-000, Cidade, Estado} % Destinatário da carta
+%\date{\today} % Data da carta
+%\opening{Prezado Sr. ou Sra.,} % Vocativo
+%\closing{Grato pela aten\c{c}\~ao,} % Encerramento
+%\enclosure[Em anexo]{curriculum vit\ae{}} % Lista de documentos anexos
+%
+%\makelettertitle % Imprimir esse título de carta
+%
+%% \lipsum[1-3]% Texto qualquer
+%
+%\makeletterclosing % Imprimir o encerramento da carta
+%
+%%----------------------------------------------------------------------------------------
 
 \end{document}
 
