@@ -1,0 +1,151 @@
+\documentclass[11pt,a4paper,sans]{moderncv}	
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\makelettertitle}
+  {\raggedright \@opening}
+  {\@opening}
+  {}{}
+\makeatother
+\usepackage[latin1]{inputenc}
+\usepackage [T1] {fontenc}
+% \usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}			% se deseja trocar a largura da coluna    
+
+% dados pessoais
+\name{Luiz}{Angioletti}
+%\title{Curriculum Vit\ae}
+\address{Rua Oswaldo Cruz, 195 ap 54}{13276-230}
+\phone[mobile]{+55~(19)~98406~5785}
+\phone[fixed]{+55~(19)~3327~5453}
+\email{luiz.angioletti@gmail.com}
+\social[linkedin]{br.linkedin.com/in/luizangioletti}
+\extrainfo{skype: luizfelipeasoares}					% informação opcional, caso não a queria, elimine a linha
+% \photo[64pt][0.4pt]{picture}					% `64pt' é a altura a que a imagem deve ser ajustada, `0.4pt' é a espessura do quadro que a contera (informe `0pt' para nenhum contorno) e `picture' é o nome do arquivo; informação opcional, caso não a queria, elimine a linha
+%\quote{Alguma cita\c{c}\~ao (opcional)} 		% informação opcional, caso não a queria, elimine a linha
+
+% para mostrar marcadores numéricos na bibliografia (por padrão não se mostram marcadores), só é útil de desejar incluir bibliografia no CV
+
+%\makealetter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%makeatother
+
+% bibliografia com várias fontes
+%\usepackage{multilib}
+%\newcites{book,misc}{{Livros},{Outros}}
+%------------------------------------------------------------------------------------
+%				conteúdo
+%------------------------------------------------------------------------------------
+
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}					% para redigir o CV em chines usando CJK
+
+\makecvtitle
+
+\section{Forma\c{c}\~ao Acad\^emica}
+\cventry{2006 -- 2013}{Gradua\c{c}\~ao}{Universidade Federal do Par\'a}{Bel\'em}{\textit{Engenharia da Computa\c{c}\~ao}}{} % os argumentos de 3 a 6 podem permanecer em branco
+%\cventry{ano -- ano}{Grau}{Institui\c{c}\~ao}{Cidade}{\textit{Curso}}{Descri\c{c}\~ao}
+
+%\section{T\'eses de Mestrado}
+%\cvitem{t\'itulo}{\emph{T\'itulo}}
+%\cvitem{orientadores}{Orientadores}
+%\cvitem{descrição}{Uma breve descrição da tese.}
+
+\section{Experi\^encias}
+	\subsection{Profissionais}
+		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao geral, n\~ao mais que uma ou duas linhas.\newline{}%
+		Responsabilidades especificas:%
+		\begin{itemize}
+			\item responsabilidade 1;
+			\item responsabilidade 2, com sub-responsabilidades:
+			\begin{itemize}
+				\item sub-responsabilidade (a)
+				\item sub-responsabilidade (b), com sub-responsabilidades (evite fazer isso!);
+				\begin{itemize}
+					\item sub-sub-responsabilidade i;
+					\item sub-sub-responsabilidade ii;
+					\item sub-sub-responsabilidade iii;
+				\end{itemize}
+				\item sub-responsabilidade (c);
+			\end{itemize}
+			\item responsabilidade 3.
+		\end{itemize}}
+		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao na linha 1.\newline{}Descri\c{c}\~ao na linha 2.}
+
+	\subsection{Miscel\^anea}
+		\cventry{ano -- ano}{cargo}{Empregador}{Cidade}{}{Descri\c{c}\~ao}
+		
+\section{Idiomas}
+\cvitemwithcomment{Idioma 1}{nivel}{Coment\'ario}
+\cvitemwithcomment{Idioma 2}{nivel}{Coment\'ario}
+\cvitemwithcomment{Idioma 3}{nivel}{Coment\'ario}
+
+\section{Conhecimentos de Informática}
+\cvdoubleitem{categoria 1}{XXXX, YYY, ZZZ}{categoria 4}{XXXX, YYY, ZZZ}
+\cvdoubleitem{categoria 2}{XXXX, YYY, ZZZ}{categoria 5}{XXXX, YYY, ZZZ}
+\cvdoubleitem{categoria 3}{XXXX, YYY, ZZZ}{categoria 6}{XXXX, YYY, ZZZ}
+
+\section{Interesses}
+\cvitem{hobby 1}{Descrição}
+\cvitem{hobby 2}{Descrição}
+\cvitem{hobby 3}{Descrição}
+
+\section{Extra 1}
+\cvlistitem{Tema 1}
+\cvlistitem{Tema 2}
+\cvlistitem{Tema 3}
+
+\renewcommand{\listitemsymbol}{-~}			% para modificar os símbolos nas listas
+
+\section{Extra 2}
+\cvlistdoubleitem{Tema 1}{Tema 4}
+\cvlistdoubleitem{Tema 2}{Tema 5}
+\cvlistdoubleitem{Tema 3}{}
+
+% publicações tomadas de um arquivo BibTeX sem usar multibib\renewcommand*{bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+
+\nocite{*}
+\bibliography{plain}
+\bibliography{publications}					% `publications' deve ser o nome do arquivo BibTeX
+
+% Com publicações tomadas de um arquivo BibTeX usando o pacote multilib
+%\section{Publica\c{c}\~oes}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              		% 'publications' deve ser o nome do arquivo BibTeX
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              		% 'publications' deve ser o nome do arquivo BibTeX
+
+%\clearpage\end{CJK*}					% se você está redigindo seu currículo em chinês usando o CJK, \clearpage é requerido pelo fancyhdr para que funcione corretamente com o CJK, note que isso eliminará a numeração de página, ao deixar \lastpage como não definido
+
+%----------------------------------------------------------------------------------------
+%	Carta de Apresentação
+%----------------------------------------------------------------------------------------
+
+% para remover a carta de apresentação, remova todo esse bloco
+
+\clearpage
+
+\recipient{Departamento de RH}{Empresa\\123 Rua Independ\^encia\\12345-000, Cidade, Estado} % Destinatário da carta
+\date{\today} % Data da carta
+\opening{Prezado Sr. ou Sra.,} % Vocativo
+\closing{Grato pela aten\c{c}\~ao,} % Encerramento
+\enclosure[Em anexo]{curriculum vit\ae{}} % Lista de documentos anexos
+
+\makelettertitle % Imprimir esse título de carta
+
+\lipsum[1-3]% Texto qualquer
+
+\makeletterclosing % Imprimir o encerramento da carta
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+%% fim do arquivo `template-pt.tex'.
