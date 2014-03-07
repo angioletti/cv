@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper,sans]{moderncv}	
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\makelettertitle}
+  {\raggedright \@opening}
+  {\@opening}
+  {}{}
+\makeatother
+\usepackage[utf8]{inputenc}
+\usepackage [T1] {fontenc}
+% \usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.75]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}			% se deseja trocar a largura da coluna    
+
+% dados pessoais
+\name{Luiz}{Angioletti}
+%\title{Curriculum Vit\ae}
+\address{195, Oswaldo Cruz Street, apartment 54}{Valinhos/SP, Brazil -- 13276-230}
+\phone[mobile]{+55~(19)~98406~5785}
+\phone[fixed]{+55~(19)~3327~5453}
+\email{luiz.angioletti@gmail.com}
+\social[linkedin]{br.linkedin.com/in/luizangioletti/en}
+\extrainfo{single, 28, skype: luizfelipeasoares}					% informação opcional, caso não a queria, elimine a linha
+% \photo[64pt][0.4pt]{picture}					% `64pt' é a altura a que a imagem deve ser ajustada, `0.4pt' é a espessura do quadro que a contera (informe `0pt' para nenhum contorno) e `picture' é o nome do arquivo; informação opcional, caso não a queria, elimine a linha
+%\quote{Alguma cita\c{c}\~ao (opcional)} 		% informação opcional, caso não a queria, elimine a linha
+
+% para mostrar marcadores numéricos na bibliografia (por padrão não se mostram marcadores), só é útil de desejar incluir bibliografia no CV
+
+%\makealetter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%makeatother
+
+% bibliografia com várias fontes
+%\usepackage{multilib}
+%\newcites{book,misc}{{Livros},{Outros}}
+%------------------------------------------------------------------------------------
+%				conteúdo
+%------------------------------------------------------------------------------------
+
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}					% para redigir o CV em chines usando CJK
+
+\makecvtitle
+
+\section{Education}
+\cventry{2006 -- 2013}{Bachelor of Engineering}{Universidade Federal do Pará}{Belém/PA -- Brazil}{\textit{Computer Engineering}}{} 
+\cventry{2009 -- 2010}{Exchange student}{Universität Stuttgart}{Stuttgart/BW - Germany}{\textit{Electrical Engineering and Informatics}}{}
+
+\section{Experiences}
+	\subsection{Professional}
+		\cventry{2012 -- 2013}{Support Analyst}{Jambu Tecnologia e Engenharia Ltda.}{Belém/PA -- Brazil}{}{Internship at technology \emph{start-up}, which allowed for a diverse experience on almost every area of the business, such as:%
+		\begin{itemize}
+			\item systems administration programming, Bash and Python; remote and on-site costumer services;
+			\item design, implementation and maintenance of: medium-sized computer networks, authentication servers, traffic management, web servers, version control servers;
+			\item teacher at preparatory course for international Linux certification exams (LPI exams);
+			\item co-author of didatic material used in said Linux certification course.
+		\end{itemize}}
+		\cventry{2011 -- 2012}{IT Manager}{Laborat\'orio de Processamento de Sinais -- LaPS -- UFPA.}{Belém/PA -- Brazil}{}{Responsible for project and implementation of services like:
+		\begin{itemize}
+			\item training interns on costumer support;
+			\item design, implementation and maintenance of: authentication and file servers, version control server, web servers, printer server.
+		\end{itemize}}
+
+	\subsection{Volunteer Work}
+		\cventry{2008 -- 2013}{Co-Founder and Treasurer}{Grupo Colorindo Sonhos -- GCS}{Belém/PA -- Brazil}{}{The GCS group, an NGO with around 15 people, aims at meeting material and humanitarian needs of officially installed social institutions around and in the city of Belém. The group promotes awareness campaigns, organizes discussion forums, offers complementary activities for the people attended by the partner institutions and runs fundraisers. As the treasurer, I was responsible for the group's finances, as well as to relay and apply received donations.}
+		\cventry{2006 -- 2012}{IT Task-Force Manager}{União Espírita Paraense -- UEP}{Belém/PA -- Brazil}{}{UEP promotes annual events with state relevance for around 800 participants, and for that needs basic IT infrastructure. As a manager, I specified and supervised the development of an on-line registration service, processed registrations, planned and supervised the temporary IT infrastructure, and performed customer service.}
+		
+\section{Language Skills}
+\cvitemwithcomment{Portuguese}{mother language}{Brazil}
+\cvitemwithcomment{English}{fluent on writing, reading and speaking}{Certified by CCBEU -- Belém/PA --Brazil}
+\cvitemwithcomment{German}{intermediary for writing, reading and speaking}{Certified by Universität Stuttgart -- Germany}
+\cvitemwithcomment{French}{basic for writing, reading and speaking}{pending completion}
+
+\section{Computer Skills}
+\cvitemwithcomment{MS-Office package}{advanced knowledge}{Word e Excel}
+\cvitemwithcomment{MS-Office package}{basic knowledge}{PowerPoint e Access}
+\cvitemwithcomment{System Administration}{GNU/Linux}{LPI certification in progress}
+\cvitemwithcomment{Programming Languages}{work experience}{C, Java}
+\cvitemwithcomment{Programming Languages}{advanced knowledge}{Bash, Python, LaTeX}
+\cvitemwithcomment{Computer networking and routing}{advanced knowledge}{TCP/IP protocol}
+\cvitemwithcomment{Computational Intelligence}{basic knowledge}{Neural networks and genetic algorithms}
+
+
+\section{Other Interests}
+\cvitem{Open Source and Free Software}{part-taker on the principles of shared knowledge and empowerment provided by both technological movements;}
+\cvitem{Classic literature}{currently reading: Les Misérables (Victor Hugo); last read: Crime and Punishment (Fiódor Dostoiévski);}
+\cvitem{Time-management methods}{GTD (Getting Things Done) enthusiast;}
+\cvitem{Social and environmental research}{freelancer as transcriber of audio interviews for social and environmental researchers, specifically on topics related to the Amazon rainforest;}
+\cvitem{Traveling}{most recent: Brotas/SP (jul/2013) and Alter-do-Chão/PA (out/2013).}
+
+\end{document}
